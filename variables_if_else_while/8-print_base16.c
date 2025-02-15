@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
- * main: imprime la potencia de 16
+/**
+ * main - Imprime la potencia de 16
  *
- * return: si sale 0, está todo bien
+ * Return: si sale 0 esta todo bien
  */
 
 int main(void)
