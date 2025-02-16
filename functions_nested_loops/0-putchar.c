@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Imprime el mensaqje putchar
@@ -8,7 +9,8 @@
 
 int main(void)
 {
-	write(1, "_putchar\n", 10);
+	write(1, "_putchar", 8);
+	printf("\n");
 
 	return (0);
 }
