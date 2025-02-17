@@ -1,18 +1,16 @@
-#include <unistd.h>
+#include "main.h"
 
-/* void - escribe el avecedario en minuscula
- *
- */
-
+/**
+	* print_alphabet - Imprime el alfabeto en minúsculas seguido de una nueva línea.
+	*/
 void print_alphabet(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
+	char letter = 'a';
 
-	write(1, alphabet, 27);
-}
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
+	while (letter <= 'z')
+	{
+		_putchar(letter);
+		letter++;
+	}
+	_putchar('\n');
 }
