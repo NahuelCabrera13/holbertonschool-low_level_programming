@@ -1,10 +1,9 @@
-#include<stdio.h>
+#include"main.h"
 
- /*
-  * main - imprime el avecedario 10m veces
+/**
+ * print_alphabet_x10 - imprime el avecedario 10 veces
  */
-
-int main(void)
+void print_alphabet_x10(void)
 {
 	int i;
 	char pepe;
@@ -17,5 +16,4 @@ int main(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
