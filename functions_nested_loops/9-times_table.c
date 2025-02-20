@@ -18,14 +18,14 @@ void times_table(void)
 		}
 		if (pepe < 10)
 		{
-			_putchar(pepe);
+			_putchar(pepe + '0');
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
 		} else
 		{
-			_putchar((pepe / 10) + 0);
-			_putchar((pepe % 10) + 0);
+			_putchar((pepe / 10) + '0');
+			_putchar((pepe % 10) + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
