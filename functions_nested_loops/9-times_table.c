@@ -11,12 +11,12 @@ void times_table(void)
 
 	for (m = 0; m < 10; m++)
 	{
-	{
+	
 		for (n = 0; n < 10; n++)
 		{
 			pepe = m * n;
 
-		}
+
 		if (pepe <= 9)
 		{
 			_putchar(pepe + '0');
@@ -30,7 +30,8 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 		}
-	}
+
 		_putchar('\n');
+		}
 	}
 }
