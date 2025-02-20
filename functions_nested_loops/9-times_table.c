@@ -1,38 +1,33 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * times_table - reconoce los caracteres en minuscula
- * Return: 1 es si todo esta bien, 0 si no,
+ * times_table - no  se que hace
  */
 void times_table(void)
 {
-	int m, n, pepe;
+	int m, n, product;
 
 	for (m = 0; m < 10; m++)
 	{
-
 		for (n = 0; n < 10; n++)
 		{
-			pepe = m * n;
-
-
-		if (pepe <= 9)
-		{
-			_putchar(pepe + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-		} else
-		{
-			_putchar((pepe / 10) + '0');
-			_putchar((pepe % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-
+			product = m * n;
+			if (n > 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			if (product < 10)
+			{
+				if (n > 0)
+					_putchar(' ');
+				_putchar(product + '0');
+			}
+			else
+			{
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
+			}
 		}
 		_putchar('\n');
-
 	}
 }
