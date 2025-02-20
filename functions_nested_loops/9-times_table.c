@@ -16,7 +16,7 @@ void times_table(void)
 			pepe = m * n;
 
 		}
-		if (pepe < 10)
+		if (pepe <= 9)
 		{
 			_putchar(pepe + '0');
 			_putchar(',');
@@ -29,5 +29,9 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 		}
+		}if (n != 9)
+			_putchar(',');
+			_putchar(' ');
+		}	
 	}
 }
