@@ -29,9 +29,11 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 		}
-		}if (n != 9)
+
+		if (n != 9)
+		{
 			_putchar(',');
 			_putchar(' ');
-		}	
+		}
 	}
 }
