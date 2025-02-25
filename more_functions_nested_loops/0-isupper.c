@@ -1,7 +1,7 @@
 #include"main.h"
 
 /**
- * _islower - reconoce los caracteres en minuscula
+ * _isupper - reconoce los caracteres en minuscula
  * @c: es la variable aignada
  * Return: 1 es si todo esta bien, 0 si no
  */
