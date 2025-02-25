@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 
 /**
  * mul - reconoce los caracteres en minuscula
@@ -9,10 +10,5 @@
 int mul(int a, int b)
 {
 
-	a = 1
-	b = 3
-
-	_putchar( a * b);
-
-	return(0);
+	return (a * b);
 }
