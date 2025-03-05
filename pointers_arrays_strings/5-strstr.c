@@ -3,7 +3,7 @@
 /**
  * _strstr - pepe
  * @haystack: cadena
- * @needle: sub cadena 
+ * @needle: sub cadena
  * Return: Return haystack
 */
 char *_strstr(char *haystack, char *needle)
