@@ -4,20 +4,19 @@
 #include<stddef.h>
 
 /**
- * create_array - esto es pepe
- * @size: pepe maximo
- * @c: adivinaste, otra vez pepe
+ * _strdup - esto es pepe
+ * @str: pepe
  * Return: ni idea
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	int i, legth;
 
 	char *str2;
 
-	if(str == NULL)
+	if (str == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 
 	while (str[legth] != '\0')
@@ -25,13 +24,13 @@ char *_strdup(char *str);
 
 
 	str2 = (char *)malloc((legth + 1) * sizeof(char));
-	
+
 	if (str2 == NULL)
-		return(NULL);
+		return (NULL);
 
 	for (i = 0; i < legth; i++)
 	{
-		str2[i] = str[i]
+		str2[i] = str[i];
 	}
 	return (str2);
 }
