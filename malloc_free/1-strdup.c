@@ -10,7 +10,7 @@
  */
 char *_strdup(char *str)
 {
-	int i, legth;
+	int i, legth = 0;
 
 	char *str2;
 
@@ -21,7 +21,6 @@ char *_strdup(char *str)
 
 	while (str[legth] != '\0')
 		legth++;
-
 
 	str2 = (char *)malloc((legth + 1) * sizeof(char));
 
