@@ -9,36 +9,44 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, k, lengthS1, lengthS2, newStrLength;
+        int i, j, k, lengthS1, lengthS2, newStrLength;
 
-	char *memory;
+        char *memory;
 
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; s2[j] != '\0'; j++)
-		;
+        if (s1 == NULL && s2 == NULL)
+                return (strdup(""));
 
-	lengthS1 = i;
-	lengthS2 = j;
-	newStrLength = lengthS1 + lengthS2 + 1;
+        if (s1 == NULL)
+                return (strdup(s2));
 
-	memory = malloc(newStrLength * sizeof(char));
+        if (s2 == NULL)
+                return (strdup(s1));
 
-	if (memory == NULL)
-		return (NULL);
+        for (i = 0; s1[i] != '\0'; i++)
+                ;
+        for (j = 0; s2[j] != '\0'; j++)
+                ;
 
-	i = 0, j = 0;
+        lengthS1 = i;
+        lengthS2 = j;
+        newStrLength = lengthS1 + lengthS2 + 1;
 
-	for (k = 0; k < lengthS1; k++, i++)
-	{
-		memory[k] = s1[i];
-	}
-	
-	for (; k < newStrLength; k++, j++)
-	{
-		memory[k] = s2[j];
-	}
+        memory = malloc(newStrLength * sizeof(char));
 
-	memory[k + 1] = '\0';
-	return (memory);
-}
+        if (memory == NULL)
+                return (NULL);
+
+        i = 0, j = 0;
+
+        for (k = 0; k < lengthS1; k++, i++)
+        {
+                memory[k] = s1[i];
+        }
+
+        for (; k < newStrLength; k++, j++)
+        {
+                memory[k] = s2[j];
+        }
+
+        memory[k] = '\0';
+        return (memory);                                                                                                                                                                                         }
